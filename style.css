@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=Roboto:wght@100;300;400;700;900&family=Share+Tech+Mono&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Syne+Mono&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    min-height: 100svh;
+}
+
+main {
+    background-color: #fff;
+    max-width: 930px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.content {
+    padding: 34px 26px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+h1 {
+    color: hsl(234, 29%, 20%);
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-image: url(assets/images/icon-list.svg);
+    margin-bottom: 20px;
+    margin-left: 26px;
+}
+
+li {
+    padding-left: 15px;
+}
+
+li:not(li:last-of-type) {
+    margin-bottom: 10px;
+}
+
+li:last-of-type {
+    margin-bottom: 30px;
+}
+
+li span {
+    display: block;
+    position: relative;
+    top: -5px;
+}
+
+label[for="email"] {
+    font-weight: bold;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 7px;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 20px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    background: hsl(235, 18%, 26%);
+    color: white;
+    font-weight: bold;
+}
+
+#success {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100dvh;
+    padding: 34px 26px;
+    background: white;
+    max-width: 504px;
+    max-height: 520px;
+    overflow: hidden;
+}
+
+#success img {
+    position: relative;
+    top: -5vh;
+}
+
+#success p {
+    line-height: 1.4;
+}
+
+#succes button {
+    position: absolute;
+    bottom: 0px;
+}
+
+button:active {
+    background: linear-gradient(to left, rgba(255, 83, 121, 1), rgba(255, 105, 60, 1));
+}
+
+@media screen and (min-width: 400px) {
+    body {
+        padding: 50px;
+        background-color: hsl(235, 18%, 26%);
+        display: grid;
+        place-items: center;
+    }
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 33px;
+        overflow: hidden;
+        padding: 26px;
+    }
+    main > * {
+        flex: 1 1 50%;
+    }
+    .image {
+        margin-left: auto;
+        border-radius: 30px;
+    }
+    #success {
+        border-radius: 33px;
+        padding: 65px;
+    }
+    #success h1 {
+        font-size: 48px;
+        line-height: 1;
+    }
+
+    #success button {
+        font-size: 16px;
+    }
+
+}

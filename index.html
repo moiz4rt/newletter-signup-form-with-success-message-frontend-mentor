@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; padding: 40px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main>
+    <picture class="image-wrapper">
+      <source media="(min-width: 400px)" srcset="assets/images/illustration-sign-up-desktop.svg">
+      <img src="assets/images/illustration-sign-up-mobile.svg" alt="" class="image">
+    </picture>
+    <!-- Sign-up form start -->
+    <div class="content">
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul>
+        <li><span>Product discovery and building what matters</span></li>
+        <li><span>Measuring to ensure updates are a success</span></li>
+        <li><span>And much more!</span></li>
+      </ul>
+      <form action="#">
+        <label for="email">Email address</label>
+        <input type="email" name="" id="email" placeholder="email@company.com">
+        <button onclick="show()">Subscribe to monthly newsletter</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+
+  <div id="success" style="display: none;">
+    <div></div>
+    <div class="para">
+      <img src="assets/images/icon-success.svg" alt="" width="64" height="64">
+      <h1>Thanks for subscribing!</h1>
+      <p>
+        A confirmation email has been sent to <strong>ash@loremcompany.com</strong>.
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+    </div>
+      <button onclick="hide()">Dismiss message</button>
+  </div>
+
+  <!-- Success message end -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Moisés Cristiano Dutra Pastorio</a>.
+  </div>
+
+  <script>
+    function show() {
+      document.getElementById("success").style.display = "flex";
+      document.querySelector("main").style.display = "none";
+    }
+
+    function hide() {
+      document.getElementById("success").style.display = "none";
+      document.querySelector("main").style.display = "flex";
+    }
+  </script>
+</body>
+</html>
