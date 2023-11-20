@@ -2,6 +2,14 @@
 
 ![Design preview for the Newsletter sign-up form with success message coding challenge](./design/desktop-preview.jpg)
 
+I've just completed a front-end coding challenge from @frontendmentor! 🎉
+
+You can see my solution here: https://www.frontendmentor.io/solutions/newlettersignupformwithsuccessmessagefrontendmentor-AOcvuxUaAU
+
+Any suggestions on how I can improve are welcome!
+
+
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
